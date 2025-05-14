@@ -3,7 +3,9 @@
 //     - If the object contains nested objects, make sure the nested objects are also copied and
 //  not referenced.
 
-function deepCopy(obj) {}
+function deepCopy(obj) {
+  return JSON.parse(JSON.stringify(obj));
+}
 
 const obj = {
   name: "John",
